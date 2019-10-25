@@ -1,0 +1,311 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8" />
+    <meta http-equiv="x-ua-compatible" content="ie=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <link type="text/css" rel="stylesheet" href="./styles/graphdoc.css" />
+    <title>Providers</title>
+    <link href="https://fonts.googleapis.com/css?family=Ubuntu+Mono:400,700" rel="stylesheet"><link type="text/css" rel="stylesheet" href="./assets/code.css" /><link type="text/css" rel="stylesheet" href="./assets/require-by.css" />
+</head>
+<body class="slds-scrollable--y">
+    <nav class="slds-grid slds-grid--vertical slds-col--rule-right">
+        <header class="slds-p-around--medium slds-col slds-shrik slds-grow-none">
+            <button class="slds-button slds-button--icon slds-float--right js-toggle-navigation less-than-medium">
+                <i class="material-icons">close</i>
+            </button>
+                <h3 class="slds-text-heading--medium"><a href="./">GraphQL Schema</a></h3>
+            <div class="slds-p-top--small">
+                <input id="type-search" type="text" placeholder="Search a type" autofocus="" class="slds-input" />
+            </div>
+        </header>
+        <div id="navication-scroll" class="slds-scrollable--y slds-col slds-grow">
+<div class="slds-grid slds-grid--vertical slds-navigation-list--vertical">
+    <h4 class="slds-text-title--caps slds-p-around--medium">Schema</h4>
+    <ul>
+        <li  title="Query">
+            <a href="query.doc.html" class="slds-navigation-list--vertical__action slds-text-link--reset slds-truncate">
+                Query
+            </a>
+        </li>
+        <li  title="Mutation">
+            <a href="mutation.doc.html" class="slds-navigation-list--vertical__action slds-text-link--reset slds-truncate">
+                Mutation
+            </a>
+        </li>
+    </ul>
+</div>
+<div class="slds-grid slds-grid--vertical slds-navigation-list--vertical">
+    <h4 class="slds-text-title--caps slds-p-around--medium">Scalars</h4>
+    <ul>
+        <li  title="Boolean">
+            <a href="boolean.doc.html" class="slds-navigation-list--vertical__action slds-text-link--reset slds-truncate">
+                Boolean
+            </a>
+        </li>
+        <li  title="Date">
+            <a href="date.doc.html" class="slds-navigation-list--vertical__action slds-text-link--reset slds-truncate">
+                Date
+            </a>
+        </li>
+        <li  title="DateTime">
+            <a href="datetime.doc.html" class="slds-navigation-list--vertical__action slds-text-link--reset slds-truncate">
+                DateTime
+            </a>
+        </li>
+        <li  title="Float">
+            <a href="float.doc.html" class="slds-navigation-list--vertical__action slds-text-link--reset slds-truncate">
+                Float
+            </a>
+        </li>
+        <li  title="ID">
+            <a href="id.doc.html" class="slds-navigation-list--vertical__action slds-text-link--reset slds-truncate">
+                ID
+            </a>
+        </li>
+        <li  title="Int">
+            <a href="int.doc.html" class="slds-navigation-list--vertical__action slds-text-link--reset slds-truncate">
+                Int
+            </a>
+        </li>
+        <li  title="String">
+            <a href="string.doc.html" class="slds-navigation-list--vertical__action slds-text-link--reset slds-truncate">
+                String
+            </a>
+        </li>
+        <li  title="Void">
+            <a href="void.doc.html" class="slds-navigation-list--vertical__action slds-text-link--reset slds-truncate">
+                Void
+            </a>
+        </li>
+    </ul>
+</div>
+<div class="slds-grid slds-grid--vertical slds-navigation-list--vertical">
+    <h4 class="slds-text-title--caps slds-p-around--medium">Enums</h4>
+    <ul>
+        <li  title="CurrencyCodes">
+            <a href="currencycodes.doc.html" class="slds-navigation-list--vertical__action slds-text-link--reset slds-truncate">
+                CurrencyCodes
+            </a>
+        </li>
+        <li  title="LanguageCodes">
+            <a href="languagecodes.doc.html" class="slds-navigation-list--vertical__action slds-text-link--reset slds-truncate">
+                LanguageCodes
+            </a>
+        </li>
+        <li  title="OrderDirection">
+            <a href="orderdirection.doc.html" class="slds-navigation-list--vertical__action slds-text-link--reset slds-truncate">
+                OrderDirection
+            </a>
+        </li>
+        <li class="slds-is-active" title="Providers">
+            <a href="providers.doc.html" class="slds-navigation-list--vertical__action slds-text-link--reset slds-truncate">
+                Providers
+            </a>
+        </li>
+        <li  title="TransactionCommitState">
+            <a href="transactioncommitstate.doc.html" class="slds-navigation-list--vertical__action slds-text-link--reset slds-truncate">
+                TransactionCommitState
+            </a>
+        </li>
+        <li  title="TransactionOrderField">
+            <a href="transactionorderfield.doc.html" class="slds-navigation-list--vertical__action slds-text-link--reset slds-truncate">
+                TransactionOrderField
+            </a>
+        </li>
+        <li  title="TransactionPhase">
+            <a href="transactionphase.doc.html" class="slds-navigation-list--vertical__action slds-text-link--reset slds-truncate">
+                TransactionPhase
+            </a>
+        </li>
+        <li  title="TransactionStatus">
+            <a href="transactionstatus.doc.html" class="slds-navigation-list--vertical__action slds-text-link--reset slds-truncate">
+                TransactionStatus
+            </a>
+        </li>
+        <li  title="Trashed">
+            <a href="trashed.doc.html" class="slds-navigation-list--vertical__action slds-text-link--reset slds-truncate">
+                Trashed
+            </a>
+        </li>
+        <li  title="__DirectiveLocation">
+            <a href="directivelocation.spec.html" class="slds-navigation-list--vertical__action slds-text-link--reset slds-truncate">
+                __DirectiveLocation
+            </a>
+        </li>
+        <li  title="__TypeKind">
+            <a href="typekind.spec.html" class="slds-navigation-list--vertical__action slds-text-link--reset slds-truncate">
+                __TypeKind
+            </a>
+        </li>
+    </ul>
+</div>
+<div class="slds-grid slds-grid--vertical slds-navigation-list--vertical">
+    <h4 class="slds-text-title--caps slds-p-around--medium">Objects</h4>
+    <ul>
+        <li  title="AuthenticationResult">
+            <a href="authenticationresult.doc.html" class="slds-navigation-list--vertical__action slds-text-link--reset slds-truncate">
+                AuthenticationResult
+            </a>
+        </li>
+        <li  title="PageInfo">
+            <a href="pageinfo.doc.html" class="slds-navigation-list--vertical__action slds-text-link--reset slds-truncate">
+                PageInfo
+            </a>
+        </li>
+        <li  title="PaginatorInfo">
+            <a href="paginatorinfo.doc.html" class="slds-navigation-list--vertical__action slds-text-link--reset slds-truncate">
+                PaginatorInfo
+            </a>
+        </li>
+        <li  title="Store">
+            <a href="store.doc.html" class="slds-navigation-list--vertical__action slds-text-link--reset slds-truncate">
+                Store
+            </a>
+        </li>
+        <li  title="Transaction">
+            <a href="transaction.doc.html" class="slds-navigation-list--vertical__action slds-text-link--reset slds-truncate">
+                Transaction
+            </a>
+        </li>
+        <li  title="TransactionPaginator">
+            <a href="transactionpaginator.doc.html" class="slds-navigation-list--vertical__action slds-text-link--reset slds-truncate">
+                TransactionPaginator
+            </a>
+        </li>
+        <li  title="TransactionRefund">
+            <a href="transactionrefund.doc.html" class="slds-navigation-list--vertical__action slds-text-link--reset slds-truncate">
+                TransactionRefund
+            </a>
+        </li>
+        <li  title="User">
+            <a href="user.doc.html" class="slds-navigation-list--vertical__action slds-text-link--reset slds-truncate">
+                User
+            </a>
+        </li>
+        <li  title="__Directive">
+            <a href="directive.spec.html" class="slds-navigation-list--vertical__action slds-text-link--reset slds-truncate">
+                __Directive
+            </a>
+        </li>
+        <li  title="__EnumValue">
+            <a href="enumvalue.spec.html" class="slds-navigation-list--vertical__action slds-text-link--reset slds-truncate">
+                __EnumValue
+            </a>
+        </li>
+        <li  title="__Field">
+            <a href="field.spec.html" class="slds-navigation-list--vertical__action slds-text-link--reset slds-truncate">
+                __Field
+            </a>
+        </li>
+        <li  title="__InputValue">
+            <a href="inputvalue.spec.html" class="slds-navigation-list--vertical__action slds-text-link--reset slds-truncate">
+                __InputValue
+            </a>
+        </li>
+        <li  title="__Schema">
+            <a href="schema.spec.html" class="slds-navigation-list--vertical__action slds-text-link--reset slds-truncate">
+                __Schema
+            </a>
+        </li>
+        <li  title="__Type">
+            <a href="type.spec.html" class="slds-navigation-list--vertical__action slds-text-link--reset slds-truncate">
+                __Type
+            </a>
+        </li>
+    </ul>
+</div>
+<div class="slds-grid slds-grid--vertical slds-navigation-list--vertical">
+    <h4 class="slds-text-title--caps slds-p-around--medium">Input Objects</h4>
+    <ul>
+        <li  title="LoginInput">
+            <a href="logininput.doc.html" class="slds-navigation-list--vertical__action slds-text-link--reset slds-truncate">
+                LoginInput
+            </a>
+        </li>
+        <li  title="TransactionFilters">
+            <a href="transactionfilters.doc.html" class="slds-navigation-list--vertical__action slds-text-link--reset slds-truncate">
+                TransactionFilters
+            </a>
+        </li>
+        <li  title="TransactionOrder">
+            <a href="transactionorder.doc.html" class="slds-navigation-list--vertical__action slds-text-link--reset slds-truncate">
+                TransactionOrder
+            </a>
+        </li>
+    </ul>
+</div>
+<div class="slds-grid slds-grid--vertical slds-navigation-list--vertical">
+    <h4 class="slds-text-title--caps slds-p-around--medium">Directives</h4>
+    <ul>
+        <li  title="deprecated">
+            <a href="deprecated.doc.html" class="slds-navigation-list--vertical__action slds-text-link--reset slds-truncate">
+                deprecated
+            </a>
+        </li>
+        <li  title="include">
+            <a href="include.doc.html" class="slds-navigation-list--vertical__action slds-text-link--reset slds-truncate">
+                include
+            </a>
+        </li>
+        <li  title="skip">
+            <a href="skip.doc.html" class="slds-navigation-list--vertical__action slds-text-link--reset slds-truncate">
+                skip
+            </a>
+        </li>
+    </ul>
+</div>
+        </div>
+    </nav>
+    <main><section class="title slds-theme--inverse">
+    <div class="container slds-grid">
+        <div>
+        <button class="slds-button js-toggle-navigation less-than-medium">
+            <i class="material-icons slds-button__icon slds-button__icon--left">menu</i>
+            <span class="slds-text-title--caps">Types<span>
+        </button>
+        </div>
+        </div>
+    </div>
+    <div class="container">
+        <p class="slds-text-title--caps slds-text-color--weak">ENUM</p>
+        <h1 class="slds-text-heading--large">Providers</h1>
+        <div class="slds-text-body--regular"></div>
+    </div>
+</section>
+<section>
+    <div class="container">
+        <h2 id="graphql-schema-definition" class="graphdoc-section__title slds-text-heading--medium slds-m-top--small">
+            <a href="#graphql-schema-definition">
+                <i class="material-icons">link</i>
+            </a>
+            GraphQL Schema definition
+        </h2>
+        <code class="highlight"><ul class="code" style="padding-left:42px"><li><span class="keyword operator ts">enum</span> <span class="identifier">Providers</span> {</li><li><span class="tab"></span></li><li><span class="tab"><span class="meta">ABAQOOS</span></span></li><li><span class="tab"></span></li><li><span class="tab"><span class="meta">Barion</span></span></li><li><span class="tab"></span></li><li><span class="tab"><span class="meta">Barion2</span></span></li><li><span class="tab"></span></li><li><span class="tab"><span class="meta">BBAruhitel</span></span></li><li><span class="tab"></span></li><li><span class="tab"><span class="meta">Borgun</span></span></li><li><span class="tab"></span></li><li><span class="tab"><span class="meta">Borgun2</span></span></li><li><span class="tab"></span></li><li><span class="tab"><span class="meta">CIB</span></span></li><li><span class="tab"></span></li><li><span class="tab"><span class="meta">Escalion</span></span></li><li><span class="tab"></span></li><li><span class="tab"><span class="meta">FHB</span></span></li><li><span class="tab"></span></li><li><span class="tab"><span class="meta">GP</span></span></li><li><span class="tab"></span></li><li><span class="tab"><span class="meta">IPG</span></span></li><li><span class="tab"></span></li><li><span class="tab"><span class="meta">KHB</span></span></li><li><span class="tab"></span></li><li><span class="tab"><span class="meta">KHBSZEP</span></span></li><li><span class="tab"></span></li><li><span class="tab"><span class="meta">MKBSZEP</span></span></li><li><span class="tab"></span></li><li><span class="tab"><span class="meta">MPP</span></span></li><li><span class="tab"></span></li><li><span class="tab"><span class="meta">MPP2</span></span></li><li><span class="tab"></span></li><li><span class="tab"><span class="meta">OTP</span></span></li><li><span class="tab"></span></li><li><span class="tab"><span class="meta">OTP2</span></span></li><li><span class="tab"></span></li><li><span class="tab"><span class="meta">OTPay</span></span></li><li><span class="tab"></span></li><li><span class="tab"><span class="meta">OTPayMP</span></span></li><li><span class="tab"></span></li><li><span class="tab"><span class="meta">OTPMultipont</span></span></li><li><span class="tab"></span></li><li><span class="tab"><span class="meta">OTPSimple</span></span></li><li><span class="tab"></span></li><li><span class="tab"><span class="meta">OTPSimpleWire</span></span></li><li><span class="tab"></span></li><li><span class="tab"><span class="meta">PayPal</span></span></li><li><span class="tab"></span></li><li><span class="tab"><span class="meta">Paysafecash</span></span></li><li><span class="tab"></span></li><li><span class="tab"><span class="meta">PayU</span></span></li><li><span class="tab"></span></li><li><span class="tab"><span class="meta">PayU2</span></span></li><li><span class="tab"></span></li><li><span class="tab"><span class="meta">PayUCash</span></span></li><li><span class="tab"></span></li><li><span class="tab"><span class="meta">PayUMobile</span></span></li><li><span class="tab"></span></li><li><span class="tab"><span class="meta">PayURest</span></span></li><li><span class="tab"></span></li><li><span class="tab"><span class="meta">PayUWire</span></span></li><li><span class="tab"></span></li><li><span class="tab"><span class="meta">PSC</span></span></li><li><span class="tab"></span></li><li><span class="tab"><span class="meta">QPAY</span></span></li><li><span class="tab"></span></li><li><span class="tab"><span class="meta">Saferpay</span></span></li><li><span class="tab"></span></li><li><span class="tab"><span class="meta">SMS</span></span></li><li><span class="tab"></span></li><li><span class="tab"><span class="meta">Sofort</span></span></li><li><span class="tab"></span></li><li><span class="tab"><span class="meta">UniCredit</span></span></li><li><span class="tab"></span></li><li><span class="tab"><span class="meta">Virpay</span></span></li><li>}</li></ul></code>
+    </div>
+</section>
+<section>
+    <div class="container">
+        <h2 id="require-by" class="graphdoc-section__title slds-text-heading--medium slds-m-top--small">
+            <a href="#require-by">
+                <i class="material-icons">link</i>
+            </a>
+            Require by
+        </h2>
+        <ul class="require-by"><li><a href="transaction.doc.html" title="Transaction - ">Transaction<em>null</em></a><li><li><a href="transactionfilters.doc.html" title="TransactionFilters - ">TransactionFilters<em>null</em></a><li></ul>
+    </div>
+</section>
+<footer>
+<div class="container slds-p-around--large">
+    <p class="slds-text-align--right slds-text-title--caps">
+        Generated with <a href="https://github.com/2fd/graphdoc#readme" target="_blank">graphdoc 2.4.0</a>
+    </p>
+</div>
+</footer>
+</main>
+    <script src="./scripts/focus-active.js"></script>
+    <script src="./scripts/filter-types.js"></script>
+    <script src="./scripts/toggle-navigation.js"></script>
+</body>
